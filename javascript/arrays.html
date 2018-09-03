@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<script>
+    var studentList = [];
+    function addStudent() {
+        studentList.push(document.getElementById("firstName").value);
+    }
+    function displayStudents() {
+        document.getElementById("listOfStudents").innerHTML = studentList.join(" ");
+    }
+
+</script>
+
+<h2>
+    Enter First Name :
+</h2>
+<form>
+    <input type="text" id="firstName" maxlength="10">
+</form>
+<button onclick="addStudent();document.getElementById('firstName').value = ''">Add</button>
+
+<button onclick="displayStudents()">Display</button>
+
+<p id="listOfStudents"></p>
+
+</body>
+</html>

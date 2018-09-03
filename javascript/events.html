@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    function reverseString() {
+        document.getElementById("reverseString").innerHTML =
+            document.getElementById("stringField").value.split("").reverse().join("");
+    }
+</script>
+
+<h2>
+    Enter any random string :
+</h2>
+<form>
+    <input type="text" id="stringField" maxlength="10">
+</form>
+<button onclick="reverseString()">Reverse</button>
+
+
+<p id="reverseString"></p>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<script>
+    function replaceRegEx() {
+        var regEx = /Mayur/g;
+        var input = document.getElementById("inputString").value;
+        if (regEx.test(input)){
+            document.getElementById("outputString").innerHTML = input.replace(regEx, "Shishir");
+        }
+        else {
+            document.getElementById("outputString").innerHTML = "No occurrences found :(";
+        }
+    }
+
+</script>
+
+<h2>
+    Enter String :
+</h2>
+<form>
+    <input type="text" id="inputString">
+</form>
+<button onclick="replaceRegEx()">Replace</button>
+
+<p id="outputString"></p>
+
+</body>
+</html>
