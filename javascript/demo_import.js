@@ -1,0 +1,1 @@
+require('./demo_export.js').welcomeMessage();
