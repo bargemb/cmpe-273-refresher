@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Storage</title>
+</head>
+<body>
+<script>
+    function saveName(){
+        localStorage.stuName = document.getElementById("stuName").value;
+    }
+    function retrieveName(){
+        document.getElementById("storedName").innerHTML = localStorage.stuName;
+    }
+</script>
+<h2>
+    Enter name to store:
+</h2>
+<form>
+    <input type="text" id="stuName">
+</form>
+<button onclick="saveName()">Store</button>
+<button onclick="retrieveName()">Retrieve</button>
+
+<p id="storedName">
+
+</p>
+</body>
+</html>
