@@ -1,11 +1,9 @@
 public class MyQueue {
-
     int array[];
     int front, rear;
 
     public MyQueue(int size){
-        front = 0;
-        rear = 0;
+        front = 0; rear = 0;
         array = new int[size];
     }
     void enqueue(int elem){
